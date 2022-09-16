@@ -26,6 +26,11 @@
           <h2>lien vers Page Liste-Fetch</h2>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/edit/new">
+          <h2>lien vers Page Formulaire</h2>
+        </router-link>
+      </li>
     </ul>
   </nav>
 
