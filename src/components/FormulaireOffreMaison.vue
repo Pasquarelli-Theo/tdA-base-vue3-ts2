@@ -31,11 +31,11 @@ const maison = ref({});
         <FormKit name="price" label="prix" type="number" />
         <FormKit
           name="favoris"
-          label="mettre en valeur"
+          label="mettre en favorie"
           type="checkbox"
           wrapper-class="flex"
         />
-        <FormKit name="nbbath" label="nobre de salle de bain" />
+        <FormKit name="nbbath" label="nombre de salle de bain" />
         <FormKit name="nbsize" label="superficie" />
       </FormKit>
     </div>
