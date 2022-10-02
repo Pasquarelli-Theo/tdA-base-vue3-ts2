@@ -10,7 +10,7 @@ console.log(Maison);
 
 <template>
   <div class="p-2">
-    <h2 class="text-2xl">Liste avec supabase</h2>
+    <h2 class="text-2xl font-bold underline text-red-500">Liste avec supabase</h2>
   </div>
   <div class="flex flex-row">
     <div v-for="m in Maison" :key="m">

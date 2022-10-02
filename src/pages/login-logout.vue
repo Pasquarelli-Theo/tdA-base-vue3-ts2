@@ -1,47 +1,13 @@
 <script setup lang="ts">
-import { ref } from "@vue/reactivity";
-import { supabase, user } from "../supabase";
-async function signIn(data, node) {
-  console.log({ data, node });
+import Seco from "../components/seco.vue";
 
-  const { user, error } = await /* nvlUtilisateur
-    ? supabase.auth.signUp(data)
-    : */ supabase.auth.signIn(data);
-  console.log({ user, error });
-
-  if (error) {
-    console.error(error);
-    node.setErrors([error.message]);
-  }
-}
-const nvlUtilisateur = ref(false);
 </script>
+
 <template>
+     <h2 class="text-2xl font-bold underline text-red-500">Page se connecter</h2>
+
   <div>
-    <button v-if="user" @pointerdown="supabase.auth.signOut()">
-      Se déconnecter ({{ user.email }})
-    </button>
-    <FormKit
-      v-else
-      type="form"
-      :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
-      @submit="signIn"
-      :submit-attrs="{ classes: { input: 'bg-blue-500 p-1 rounded' } }"
-      :config="{
-          classes: {
-            input: 'p-1 rounded border-black shadow-sm border',
-            label: 'text-gray-600',
-          },
-        }"
-    >
-      <FormKit name="email" label="Votre eMail" type="email" />
-      <FormKit name="password" label="Mot de passe" type="password" />
-      <formKit
-        label="Nouvel utilisateur ?"
-        name="nvlUtilisateur"
-        type="checkbox"
-        v-model="nvlUtilisateur"
-      />
-    </FormKit>
+   
+    <Seco></Seco>
   </div>
 </template>

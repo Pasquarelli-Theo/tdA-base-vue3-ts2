@@ -1,6 +1,6 @@
 <template>
   <div class="p-2">
-    <h1 class="text-2xl">Page Liste Fetch</h1>
+    <h2 class="text-2xl font-bold underline text-red-500">Page Liste Fetch</h2>
     <div v-for="maisons in maisons" :key="maisons.nom">
       <card class="w-1/2" v-bind="maisons" />
     </div>

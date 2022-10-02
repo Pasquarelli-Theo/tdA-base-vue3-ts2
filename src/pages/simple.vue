@@ -1,6 +1,6 @@
 <template>
   <div class="p-2">
-    <h1 class="text-2xl">Page Simple</h1>
+    <h2 class="text-2xl font-bold underline text-red-500">Page Simple</h2>
     <card class="w-1/2" v-bind="objet" />
   </div>
 </template>

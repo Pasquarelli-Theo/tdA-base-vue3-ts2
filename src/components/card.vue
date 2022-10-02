@@ -1,6 +1,6 @@
 <template>
   <figure class="m-4">
-    <img class="h-32 w-auto rounded-t-lg" v-bind:src="img" alt="" />
+    <img class="w-auto rounded-t-lg" v-bind:src="img" alt="" />
     <figcaption
       class="relative flex flex-col rounded-b-lg border-2 border-t-0 px-5 py-7"
     >
