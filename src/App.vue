@@ -40,6 +40,9 @@
         <router-link class="text-red-600 underline" to="/login-logout">
           <h2>lien vers login</h2>
         </router-link>
+        <router-link class="text-red-600 underline" to="/quartier/indexQuartier">
+          <h2>lien vers Quartier</h2>
+        </router-link>
       </li>
     </ul>
   </nav>
