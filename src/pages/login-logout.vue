@@ -26,6 +26,13 @@ const nvlUtilisateur = ref(false);
       type="form"
       :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
       @submit="signIn"
+      :submit-attrs="{ classes: { input: 'bg-blue-500 p-1 rounded' } }"
+      :config="{
+          classes: {
+            input: 'p-1 rounded border-black shadow-sm border',
+            label: 'text-gray-600',
+          },
+        }"
     >
       <FormKit name="email" label="Votre eMail" type="email" />
       <FormKit name="password" label="Mot de passe" type="password" />

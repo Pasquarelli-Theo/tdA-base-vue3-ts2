@@ -16,7 +16,7 @@
     "txt": "Maison 2",
     "nbbath": 1,
     "nbsize": "186 m²",
-    "img": "/public/card.jpg"
+    "img": "/public/20210630-maisons-open-home.jpg"
   },
 
   {
@@ -26,7 +26,7 @@
     "txt": "Maison 3",
     "nbbath": 3,
     "nbsize": "193 m²",
-    "img": "/public/card.jpg"
+    "img": "/public/Visuel5.jpg"
   },
   {
     "nom": "Maison 4",
@@ -35,6 +35,6 @@
     "txt": "Maison 4",
     "nbbath": 1,
     "nbsize": "227 m²",
-    "img": "/public/card.jpg"
+    "img": "/public/maison-contemporaine_onyx-version-nuit.jpg"
   }
 ]
